@@ -24,7 +24,7 @@ resource "aws_autoscaling_group" "example" {
 	load_balancers = ["${aws_elb.example.name}"]
 	health_check_type = "ELB"
 
-	min_size = 2
+	min_size = 5 
 	max_size = 10
 
 	tag {
